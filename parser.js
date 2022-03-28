@@ -9,7 +9,7 @@ window.addEventListener('DOMContentLoaded', () => {
 			if (node.nodeName.match(/^H\d/g)) {
 				const obj = {
 					header: node.nodeName,
-					content: node.textContent,
+					content: node.textContent.trim(),
 				};
 				textNodes.push(obj);
 			} else {
